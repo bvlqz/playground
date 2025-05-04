@@ -20,12 +20,15 @@ jobs:
       - name: Setup Emscripten
         uses: mymindstorm/setup-emsdk@v12
 
+      - name: Setup Ninja
+        uses: ashutoshvarma/setup-ninja@v1.1
+
       - name: Build
         run: |
           mkdir -p build
           cd build
-          emcmake cmake ..
-          emmake make
+          emcmake cmake -G Ninja ..
+          emmake ninja
         
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
