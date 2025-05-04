@@ -33,29 +33,29 @@ target_include_directories(imgui PUBLIC
 )
 
 # Add the source files
-add_executable(playground src/main.cpp)
+add_executable(index src/main.cpp)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -sUSE_SDL=2 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sALLOW_MEMORY_GROWTH=1")
 
-target_compile_options(playground PRIVATE
+target_compile_options(index PRIVATE
     "-sUSE_WEBGL2=1"
     "-sFULL_ES3=1"
 )
 
-target_link_options(playground PRIVATE
+target_link_options(index PRIVATE
     "-sUSE_WEBGL2=1"
     "-sFULL_ES3=1"
 )
 
 # Link ImGui to the project
-target_link_libraries(playground imgui)
+target_link_libraries(index imgui)
 
-set_target_properties(playground PROPERTIES
+set_target_properties(index PROPERTIES
     LINK_FLAGS "--shell-file ${CMAKE_SOURCE_DIR}/shell.html"
 )
 
 # Set Emscripten output settings (can be changed if necessary)
-set_target_properties(playground PROPERTIES
+set_target_properties(index PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/docs
     SUFFIX ".html"
 )
