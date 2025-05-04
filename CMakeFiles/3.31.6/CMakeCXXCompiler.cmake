@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++")
+set(CMAKE_CXX_COMPILER "/home/runner/work/_temp/05bcb39a-ff01-49d0-b32f-82ea4f23c5b4/emsdk-main/upstream/emscripten/em++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "Clang")
 set(CMAKE_CXX_COMPILER_VERSION "21.0.0")
@@ -24,10 +24,10 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/emar")
-set(CMAKE_CXX_COMPILER_AR "/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/emar")
-set(CMAKE_RANLIB "/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/emranlib")
-set(CMAKE_CXX_COMPILER_RANLIB "/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/emranlib")
+set(CMAKE_AR "/home/runner/work/_temp/05bcb39a-ff01-49d0-b32f-82ea4f23c5b4/emsdk-main/upstream/emscripten/emar")
+set(CMAKE_CXX_COMPILER_AR "/home/runner/work/_temp/05bcb39a-ff01-49d0-b32f-82ea4f23c5b4/emsdk-main/upstream/emscripten/emar")
+set(CMAKE_RANLIB "/home/runner/work/_temp/05bcb39a-ff01-49d0-b32f-82ea4f23c5b4/emsdk-main/upstream/emscripten/emranlib")
+set(CMAKE_CXX_COMPILER_RANLIB "/home/runner/work/_temp/05bcb39a-ff01-49d0-b32f-82ea4f23c5b4/emsdk-main/upstream/emscripten/emranlib")
 set(CMAKE_LINKER "/usr/bin/ld")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
@@ -87,19 +87,19 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/cache/sysroot/include/fakesdl;/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/cache/sysroot/include/compat;/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/cache/sysroot/include/c++/v1;/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/lib/clang/21/include;/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/cache/sysroot/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/home/runner/work/_temp/05bcb39a-ff01-49d0-b32f-82ea4f23c5b4/emsdk-main/upstream/emscripten/cache/sysroot/include/fakesdl;/home/runner/work/_temp/05bcb39a-ff01-49d0-b32f-82ea4f23c5b4/emsdk-main/upstream/emscripten/cache/sysroot/include/compat;/home/runner/work/_temp/05bcb39a-ff01-49d0-b32f-82ea4f23c5b4/emsdk-main/upstream/emscripten/cache/sysroot/include/c++/v1;/home/runner/work/_temp/05bcb39a-ff01-49d0-b32f-82ea4f23c5b4/emsdk-main/upstream/lib/clang/21/include;/home/runner/work/_temp/05bcb39a-ff01-49d0-b32f-82ea4f23c5b4/emsdk-main/upstream/emscripten/cache/sysroot/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "GL-getprocaddr;al;html5;stubs-debug;noexit;c-debug;dlmalloc-debug;compiler_rt;c++-noexcept;c++abi-debug-noexcept;sockets")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/cache/sysroot/lib/wasm32-emscripten;/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/src/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/home/runner/work/_temp/05bcb39a-ff01-49d0-b32f-82ea4f23c5b4/emsdk-main/upstream/emscripten/cache/sysroot/lib/wasm32-emscripten;/home/runner/work/_temp/05bcb39a-ff01-49d0-b32f-82ea4f23c5b4/emsdk-main/upstream/emscripten/src/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
-set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/lib/clang/21")
+set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "/home/runner/work/_temp/05bcb39a-ff01-49d0-b32f-82ea4f23c5b4/emsdk-main/upstream/lib/clang/21")
 
 set(CMAKE_CXX_COMPILER_IMPORT_STD "")
 ### Imported target for C++23 standard library
-set(CMAKE_CXX23_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Unsupported generator: Unix Makefiles")
+set(CMAKE_CXX23_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Experimental `import std` support not enabled when detecting toolchain; it must be set before `CXX` is enabled (usually a `project()` call)")
 
 
 ### Imported target for C++26 standard library
-set(CMAKE_CXX26_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Unsupported generator: Unix Makefiles")
+set(CMAKE_CXX26_COMPILER_IMPORT_STD_NOT_FOUND_MESSAGE "Experimental `import std` support not enabled when detecting toolchain; it must be set before `CXX` is enabled (usually a `project()` call)")
 
 
 
