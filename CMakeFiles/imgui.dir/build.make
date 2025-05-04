@@ -77,105 +77,105 @@ CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.o: CMakeFiles/imgui.dir/
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.o: _deps/imgui_external-src/imgui.cpp
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/playground/playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.o"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.o -MF CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.o.d -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.o -c /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui.cpp
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.o -MF CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.o.d -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.o -c /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui.cpp
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.i"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui.cpp > CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.i
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui.cpp > CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.i
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.s"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui.cpp -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.s
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui.cpp -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui.cpp.s
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.o: CMakeFiles/imgui.dir/includes_CXX.rsp
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.o: _deps/imgui_external-src/imgui_demo.cpp
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/playground/playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.o"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.o -MF CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.o.d -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.o -c /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_demo.cpp
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.o -MF CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.o.d -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.o -c /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_demo.cpp
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.i"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_demo.cpp > CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.i
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_demo.cpp > CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.i
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.s"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_demo.cpp -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.s
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_demo.cpp -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_demo.cpp.s
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.o: CMakeFiles/imgui.dir/includes_CXX.rsp
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.o: _deps/imgui_external-src/imgui_draw.cpp
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/playground/playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.o"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.o -MF CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.o.d -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.o -c /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_draw.cpp
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.o -MF CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.o.d -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.o -c /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_draw.cpp
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.i"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_draw.cpp > CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.i
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_draw.cpp > CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.i
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.s"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_draw.cpp -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.s
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_draw.cpp -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_draw.cpp.s
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.o: CMakeFiles/imgui.dir/includes_CXX.rsp
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.o: _deps/imgui_external-src/imgui_tables.cpp
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/playground/playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.o"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.o -MF CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.o.d -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.o -c /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_tables.cpp
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.o -MF CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.o.d -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.o -c /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_tables.cpp
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.i"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_tables.cpp > CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.i
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_tables.cpp > CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.i
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.s"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_tables.cpp -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.s
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_tables.cpp -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_tables.cpp.s
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.o: CMakeFiles/imgui.dir/includes_CXX.rsp
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.o: _deps/imgui_external-src/imgui_widgets.cpp
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/playground/playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.o"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.o -MF CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.o.d -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.o -c /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_widgets.cpp
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.o -MF CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.o.d -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.o -c /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_widgets.cpp
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.i"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_widgets.cpp > CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.i
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_widgets.cpp > CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.i
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.s"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_widgets.cpp -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.s
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/playground/playground/build/_deps/imgui_external-src/imgui_widgets.cpp -o CMakeFiles/imgui.dir/_deps/imgui_external-src/imgui_widgets.cpp.s
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.o: CMakeFiles/imgui.dir/includes_CXX.rsp
 CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.o: _deps/imgui_external-src/backends/imgui_impl_sdl2.cpp
 CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/playground/playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.o"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.o -MF CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.o.d -o CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.o -c /home/runner/work/playground/playground/build/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.o -MF CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.o.d -o CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.o -c /home/runner/work/playground/playground/build/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.i"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/playground/playground/build/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp > CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.i
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/playground/playground/build/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp > CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.i
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.s"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/playground/playground/build/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp -o CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.s
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/playground/playground/build/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp -o CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_sdl2.cpp.s
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/imgui.dir/includes_CXX.rsp
 CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.o: _deps/imgui_external-src/backends/imgui_impl_opengl3.cpp
 CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/runner/work/playground/playground/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.o"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.o -c /home/runner/work/playground/playground/build/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.o -c /home/runner/work/playground/playground/build/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.i"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/playground/playground/build/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp > CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.i
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/work/playground/playground/build/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp > CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.i
 
 CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.s"
-	/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/playground/playground/build/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp -o CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.s
+	/home/runner/work/_temp/774daa40-519b-4601-9e13-ba99017309be/emsdk-main/upstream/emscripten/em++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/work/playground/playground/build/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp -o CMakeFiles/imgui.dir/_deps/imgui_external-src/backends/imgui_impl_opengl3.cpp.s
 
 # Object files for target imgui
 imgui_OBJECTS = \
