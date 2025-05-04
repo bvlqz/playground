@@ -58,10 +58,11 @@ void render_frame() {
     glClear(GL_COLOR_BUFFER_BIT);
 
     // Demo window with proper scaling (using local scaling instead of global)
-    ImGui::Begin("Interactive DSA Playground");
+    ImGui::Begin("TEST Playground");
     ImGui::SetWindowFontScale(1.0f); // Reset to default scale
-    ImGui::Text("This is a simple interactive DSA playground.");
+    ImGui::Text("Hello World1.");
     ImGui::Text("Window size: %d x %d (Native Scale: %.2f)", windowWidth, windowHeight, dpiScale);
+    ImGui::Text("DPI Scale: %.2f", dpiScale);
     ImGui::End();
 
     ImGui::ShowDemoWindow();

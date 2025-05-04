@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -19,19 +19,6 @@ jobs:
 
       - name: Setup Emscripten
         uses: mymindstorm/setup-emsdk@v12
-        with:
-          version: latest
-          actions-cache-folder: 'emsdk-cache'
-
-      - name: Cache build
-        uses: actions/cache@v3
-        with:
-          path: |
-            build
-            emsdk-cache
-          key: ${{ runner.os }}-emscripten-${{ hashFiles('**/*.cpp', '**/*.h', '**/CMakeLists.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-emscripten-
 
       - name: Build
         run: |
@@ -40,15 +27,8 @@ jobs:
           emcmake cmake ..
           emmake make
         
-      - name: Prepare deployment
-        run: |
-          mkdir -p dist
-          cp build/*.{js,wasm,html} dist/ || true
-          cp shell.html dist/index.html || true
-
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist
+          folder: build
           branch: gh-pages
-          clean: true
