@@ -1,0 +1,1 @@
+/home/runner/work/_temp/dba1cbd2-898a-4cea-87f3-cee2ed28139b/emsdk-main/upstream/emscripten/em++  -sUSE_SDL=2 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sALLOW_MEMORY_GROWTH=1 --shell-file /home/runner/work/playground/playground/shell.html -sUSE_WEBGL2=1 -sFULL_ES3=1 @CMakeFiles/playground.dir/objects1.rsp -o dist/playground.html @CMakeFiles/playground.dir/linkLibs.rsp

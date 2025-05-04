@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/runner/work/playground/playground/build/_deps/imgui_external-subbuild/CMakeFiles/imgui_external-populate"
+		},
+		{
+			"file" : "/home/runner/work/playground/playground/build/_deps/imgui_external-subbuild/CMakeFiles/imgui_external-populate.rule"
+		},
+		{
+			"file" : "/home/runner/work/playground/playground/build/_deps/imgui_external-subbuild/CMakeFiles/imgui_external-populate-complete.rule"
+		},
+		{
+			"file" : "/home/runner/work/playground/playground/build/_deps/imgui_external-subbuild/imgui_external-populate-prefix/src/imgui_external-populate-stamp/imgui_external-populate-build.rule"
+		},
+		{
+			"file" : "/home/runner/work/playground/playground/build/_deps/imgui_external-subbuild/imgui_external-populate-prefix/src/imgui_external-populate-stamp/imgui_external-populate-configure.rule"
+		},
+		{
+			"file" : "/home/runner/work/playground/playground/build/_deps/imgui_external-subbuild/imgui_external-populate-prefix/src/imgui_external-populate-stamp/imgui_external-populate-download.rule"
+		},
+		{
+			"file" : "/home/runner/work/playground/playground/build/_deps/imgui_external-subbuild/imgui_external-populate-prefix/src/imgui_external-populate-stamp/imgui_external-populate-install.rule"
+		},
+		{
+			"file" : "/home/runner/work/playground/playground/build/_deps/imgui_external-subbuild/imgui_external-populate-prefix/src/imgui_external-populate-stamp/imgui_external-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/runner/work/playground/playground/build/_deps/imgui_external-subbuild/imgui_external-populate-prefix/src/imgui_external-populate-stamp/imgui_external-populate-patch.rule"
+		},
+		{
+			"file" : "/home/runner/work/playground/playground/build/_deps/imgui_external-subbuild/imgui_external-populate-prefix/src/imgui_external-populate-stamp/imgui_external-populate-test.rule"
+		},
+		{
+			"file" : "/home/runner/work/playground/playground/build/_deps/imgui_external-subbuild/imgui_external-populate-prefix/src/imgui_external-populate-stamp/imgui_external-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"imgui_external-populate"
+		],
+		"name" : "imgui_external-populate"
+	}
+}
