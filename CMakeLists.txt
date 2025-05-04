@@ -50,6 +50,10 @@ target_link_options(playground PRIVATE
 # Link ImGui to the project
 target_link_libraries(playground imgui)
 
+set_target_properties(playground PROPERTIES
+    LINK_FLAGS "--shell-file ${CMAKE_SOURCE_DIR}/shell.html"
+)
+
 # Set Emscripten output settings (can be changed if necessary)
 set_target_properties(playground PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/dist
