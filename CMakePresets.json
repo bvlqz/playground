@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 21
+    },
+    "configurePresets": [
+        {
+            "name": "emscripten",
+            "displayName": "Emscripten Web Build",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/emscripten",
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": "/Users/becerra/Documents/GitHub/emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake",
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ]
+}
