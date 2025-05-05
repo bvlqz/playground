@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Emscripten",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/src/**",
+
+                "${env:HOME}/Documents/GitHub/emsdk/upstream/emscripten/system/include",
+                "${env:HOME}/Documents/GitHub/emsdk/upstream/emscripten/cache/sysroot/include",
+                "${env:HOME}/Documents/GitHub/emsdk/upstream/emscripten/cache/sysroot/include/SDL2",
+                "${workspaceFolder}/build/_deps/imgui_external-src",
+                "${workspaceFolder}/build/_deps/imgui_external-src/backends"
+            ],
+            "defines": [],
+            "compilerPath": "${env:HOME}/Documents/GitHub/emsdk/upstream/emscripten/em++",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64"
+        }
+    ],
+    "version": 4
+}
