@@ -37,7 +37,7 @@ bool App::init() {
     SDL_GL_SetAttribute(SDL_GL_STENCIL_SIZE, 8);
     SDL_SetHint(SDL_HINT_VIDEO_HIGHDPI_DISABLED, "0");
 
-    window = SDL_CreateWindow("Interactive DSA Playground",
+    window = SDL_CreateWindow("Playground",
                               SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
                               1280, 720,
                               SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI);
@@ -127,6 +127,9 @@ void App::render() {
     ImGui::Image(simulation->texture(), ImVec2(800, 800));
     ImGui::End();
     // -----------------------------------------------------
+
+    // Render Demo
+    ImGui::ShowDemoWindow();
 
     ImGui::Render();
     glViewport(0, 0, windowWidth, windowHeight);
