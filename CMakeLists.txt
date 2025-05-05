@@ -10,6 +10,7 @@ set(CMAKE_CXX_STANDARD 14)
 # Imgui
 FetchContent_Declare(imgui_external
 	URL https://github.com/ocornut/imgui/archive/refs/tags/v1.90.8.tar.gz
+	DOWNLOAD_EXTRACT_TIMESTAMP TRUE
 	EXCLUDE_FROM_ALL
 )
 FetchContent_MakeAvailable(imgui_external)
