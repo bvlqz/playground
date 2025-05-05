@@ -5,7 +5,7 @@ include(FetchContent)
 project(ImguiPlayground)
 
 # Set C++ standard
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
 # Imgui
 FetchContent_Declare(imgui_external
@@ -26,14 +26,27 @@ add_library(imgui
 
 )
 
-# Include directories for ImGui
+# Include directories
+#  ${CMAKE_CURRENT_SOURCE_DIR} -> Current directory where CMakeLists.txt is located
+
 target_include_directories(imgui PUBLIC
     ${imgui_external_SOURCE_DIR}
     ${imgui_external_SOURCE_DIR}/backends
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/simulations
 )
 
 # Add the source files
-add_executable(index src/main.cpp)
+add_executable(index 
+    src/main.cpp
+    src/App.h
+    src/App.cpp
+    src/SimulationInterface.h
+    src/SimulationInterface.cpp
+    src/simulations/GameOfLifeSimulation.cpp
+    src/simulations/GameOfLifeSimulation.h
+)
+
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -sUSE_SDL=2 -sUSE_WEBGL2=1 -sFULL_ES3=1 -sALLOW_MEMORY_GROWTH=1")
 
