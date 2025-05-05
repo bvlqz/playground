@@ -10,8 +10,8 @@
 
 #include <cstdio>
 
+#include "SimulationManager.h"
 
-#include "SimulationInterface.h"
 #include "GameOfLifeSimulation.h"
 #include <memory>
 #include <vector>
@@ -19,22 +19,7 @@
 
 
 static App* g_app = nullptr;
-
-// Simulation
-std::vector<std::function<std::unique_ptr<SimulationInterface>()>> simulationFactories = {
-    []() { return std::make_unique<GameOfLifeSimulation>(); },
-    // Future simulations go here
-};
-
-std::vector<std::string> simulationNames = {
-    "Game of Life",
-    // Future names go here
-};
-
-int currentSimulationIndex = 0;
-std::unique_ptr<SimulationInterface> simulation = nullptr;
-// End of simulation
-
+static SimulationManager simManager;
 
 bool App::init() {
     g_app = this;
@@ -69,12 +54,16 @@ bool App::init() {
     ImGui_ImplSDL2_InitForOpenGL(window, glContext);
     ImGui_ImplOpenGL3_Init("#version 300 es");
 
+    simManager.registerSimulation("Game of Life", [] {
+        return std::make_unique<GameOfLifeSimulation>();
+    });
+
     updateViewport();
     return true;
 }
 
 void App::run() {
-    simulation = simulationFactories[currentSimulationIndex]();
+    simulation = simManager.create(currentSimulationIndex);
     simulation->init(256, 256); // resolution of the sim texture
 
     emscripten_set_main_loop([] { g_app->render(); }, 0, true);
@@ -119,14 +108,14 @@ void App::render() {
     simulation->render();
     // --- Your simulation rendering & UI would go here ---
     ImGui::Begin("Playground");
-    ImGui::Text("Hello from App!");
 
-    if (ImGui::BeginCombo("Simulation", simulationNames[currentSimulationIndex].c_str())) {
-        for (int i = 0; i < simulationNames.size(); ++i) {
+    const auto& names = simManager.getNames();
+    if (ImGui::BeginCombo("Simulation", names[currentSimulationIndex].c_str())) {
+        for (int i = 0; i < names.size(); ++i) {
             bool selected = (i == currentSimulationIndex);
-            if (ImGui::Selectable(simulationNames[i].c_str(), selected)) {
+            if (ImGui::Selectable(names[i].c_str(), selected)) {
                 currentSimulationIndex = i;
-                simulation = simulationFactories[i]();
+                simulation = simManager.create(i);
                 simulation->init(256, 256);
             }
             if (selected) ImGui::SetItemDefaultFocus();
@@ -135,7 +124,7 @@ void App::render() {
     }
     
     simulation->ui();
-    ImGui::Image(simulation->texture(), ImVec2(256, 256));
+    ImGui::Image(simulation->texture(), ImVec2(800, 800));
     ImGui::End();
     // -----------------------------------------------------
 

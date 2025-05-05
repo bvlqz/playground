@@ -1,6 +1,6 @@
 #pragma once
 #include <SDL.h>
-
+#include "SimulationInterface.h"
 class App {
 public:
     bool init();
@@ -17,4 +17,7 @@ private:
     void updateViewport();
     void handleResize(int width, int height);
     void handleEvents();
+
+    int currentSimulationIndex = 0;
+    std::unique_ptr<SimulationInterface> simulation;
 };

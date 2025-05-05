@@ -45,6 +45,8 @@ add_executable(index
     src/SimulationInterface.cpp
     src/simulations/GameOfLifeSimulation.cpp
     src/simulations/GameOfLifeSimulation.h
+    src/SimulationManager.h
+    src/SimulationManager.cpp
 )
 
 
