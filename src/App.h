@@ -12,7 +12,10 @@ private:
     SDL_GLContext glContext = nullptr;
     int windowWidth = 1920;
     int windowHeight = 1080;
+    int frameBufferWidth = 1920;  // Added
+    int frameBufferHeight = 1080; // Added
     float dpiScale = 1.0f;
+    float contentScale = 1.0f;    // Added
 
     void updateViewport();
     void handleResize(int width, int height);

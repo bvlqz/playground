@@ -8,11 +8,13 @@
 #define IMGUI_IMPL_OPENGL_ES3
 #include <backends/imgui_impl_opengl3.h>
 
+
 #include <cstdio>
 
 #include "SimulationManager.h"
 
 #include "GameOfLifeSimulation.h"
+#include "simulations/ShaderTestSimulation.h"
 #include <memory>
 #include <vector>
 #include <string>
@@ -36,11 +38,18 @@ bool App::init() {
     SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);
     SDL_GL_SetAttribute(SDL_GL_STENCIL_SIZE, 8);
     SDL_SetHint(SDL_HINT_VIDEO_HIGHDPI_DISABLED, "0");
-
+    SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 8);
+    SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 8);
+    SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 8);
+    SDL_GL_SetAttribute(SDL_GL_ALPHA_SIZE, 8);
+    SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
+    SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 4);
+    
     window = SDL_CreateWindow("Playground",
                               SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
                               1280, 720,
-                              SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI);
+                              SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE | 
+                              SDL_WINDOW_ALLOW_HIGHDPI | SDL_WINDOW_SHOWN);
 
     glContext = SDL_GL_CreateContext(window);
     SDL_GL_MakeCurrent(window, glContext);
@@ -49,13 +58,27 @@ bool App::init() {
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO();
-    io.FontGlobalScale = 1.0f;
+    
+    // Configure ImGui style for high DPI
+    ImGui::StyleColorsDark();
+    ImGuiStyle& style = ImGui::GetStyle();
+    style.ScaleAllSizes(dpiScale);
+    
+    // Load fonts with higher resolution
+    float baseFontSize = 16.0f;
+    io.Fonts->Clear();
+    // io.Fonts->AddFontFromFileTTF("assets/fonts/Roboto-Regular.ttf", baseFontSize * dpiScale);
+    io.FontGlobalScale = 1.0f; // We handle scaling in the font size itself
 
     ImGui_ImplSDL2_InitForOpenGL(window, glContext);
     ImGui_ImplOpenGL3_Init("#version 300 es");
 
     simManager.registerSimulation("Game of Life", [] {
         return std::make_unique<GameOfLifeSimulation>();
+    });
+    
+    simManager.registerSimulation("Shader Test", [] {
+        return std::make_unique<ShaderTestSimulation>();
     });
 
     updateViewport();
@@ -70,11 +93,24 @@ void App::run() {
 }
 
 void App::updateViewport() {
-    int w, h;
+    int w, h, fbW, fbH;
     SDL_GetWindowSize(window, &w, &h);
-    SDL_GL_GetDrawableSize(window, &windowWidth, &windowHeight);
-    glViewport(0, 0, windowWidth, windowHeight);
-    dpiScale = (float)windowWidth / (float)w;
+    SDL_GL_GetDrawableSize(window, &fbW, &fbH);
+    
+    windowWidth = w;
+    windowHeight = h;
+    frameBufferWidth = fbW;
+    frameBufferHeight = fbH;
+    
+    dpiScale = (float)fbW / (float)w;
+    contentScale = dpiScale;
+    
+    glViewport(0, 0, frameBufferWidth, frameBufferHeight);
+    
+    // Update ImGui scale
+    // ImGuiStyle& style = ImGui::GetStyle();
+    // style = ImGui::GetStyle();
+    // style.ScaleAllSizes(contentScale);
 }
 
 void App::handleResize(int w, int h) {
@@ -87,6 +123,15 @@ void App::handleEvents() {
     SDL_Event event;
     while (SDL_PollEvent(&event)) {
         ImGui_ImplSDL2_ProcessEvent(&event);
+
+        // Update keyboard modifier state for ImGui
+        const Uint8* keystate = SDL_GetKeyboardState(NULL);
+        ImGuiIO& io = ImGui::GetIO();
+        io.KeyCtrl = keystate[SDL_SCANCODE_LCTRL] || keystate[SDL_SCANCODE_RCTRL];
+        io.KeyShift = keystate[SDL_SCANCODE_LSHIFT] || keystate[SDL_SCANCODE_RSHIFT];
+        io.KeyAlt = keystate[SDL_SCANCODE_LALT] || keystate[SDL_SCANCODE_RALT];
+        io.KeySuper = keystate[SDL_SCANCODE_LGUI] || keystate[SDL_SCANCODE_RGUI];
+
         if (event.type == SDL_QUIT)
             emscripten_cancel_main_loop();
         else if (event.type == SDL_WINDOWEVENT &&
@@ -101,7 +146,9 @@ void App::render() {
     ImGui_ImplOpenGL3_NewFrame();
     ImGui_ImplSDL2_NewFrame();
     ImGui::NewFrame();
-
+    
+    // Scale the rendering to match the framebuffer
+    ImGui::GetIO().DisplayFramebufferScale = ImVec2(dpiScale, dpiScale);
 
     float dt = ImGui::GetIO().DeltaTime;
     simulation->update(dt);
@@ -132,7 +179,7 @@ void App::render() {
     ImGui::ShowDemoWindow();
 
     ImGui::Render();
-    glViewport(0, 0, windowWidth, windowHeight);
+    glViewport(0, 0, frameBufferWidth, frameBufferHeight);
     glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
