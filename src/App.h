@@ -21,6 +21,9 @@ private:
     void handleResize(int width, int height);
     void handleEvents();
 
+    void setupImGuiStyle();
+    void setupImGuiFonts();
+
     int currentSimulationIndex = 0;
     std::unique_ptr<SimulationInterface> simulation;
 };

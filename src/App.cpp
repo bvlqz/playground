@@ -57,18 +57,20 @@ bool App::init() {
 
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
-    ImGuiIO& io = ImGui::GetIO();
+    // ImGuiIO& io = ImGui::GetIO();
     
+    setupImGuiStyle();
+    setupImGuiFonts();
     // Configure ImGui style for high DPI
     ImGui::StyleColorsDark();
     ImGuiStyle& style = ImGui::GetStyle();
     style.ScaleAllSizes(dpiScale);
     
     // Load fonts with higher resolution
-    float baseFontSize = 16.0f;
-    io.Fonts->Clear();
+    // float baseFontSize = 16.0f;
+    // io.Fonts->Clear();
     // io.Fonts->AddFontFromFileTTF("assets/fonts/Roboto-Regular.ttf", baseFontSize * dpiScale);
-    io.FontGlobalScale = 1.0f; // We handle scaling in the font size itself
+    // io.FontGlobalScale = 1.0f; // We handle scaling in the font size itself
 
     ImGui_ImplSDL2_InitForOpenGL(window, glContext);
     ImGui_ImplOpenGL3_Init("#version 300 es");
@@ -184,4 +186,21 @@ void App::render() {
     glClear(GL_COLOR_BUFFER_BIT);
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
     SDL_GL_SwapWindow(window);
+}
+
+void App::setupImGuiStyle() {
+    ImGuiStyle& style = ImGui::GetStyle(); 
+    ImGui::StyleColorsDark();
+
+    style.ScaleAllSizes(dpiScale);
+
+}
+
+void App::setupImGuiFonts() {
+    ImGuiIO& io = ImGui::GetIO();
+    io.Fonts->Clear();
+    // Load fonts with higher resolution
+    float baseFontSize = 16.0f;
+    io.Fonts->AddFontFromFileTTF("assets/fonts/JetBrainsMono-Regular.ttf", baseFontSize * dpiScale);
+    io.FontGlobalScale = 1.0f; // We handle scaling in the font size
 }

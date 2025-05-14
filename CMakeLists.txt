@@ -66,13 +66,16 @@ target_link_options(index PRIVATE
 
 # Link ImGui to the project
 target_link_libraries(index imgui)
-
-set_target_properties(index PROPERTIES
-    LINK_FLAGS "--shell-file ${CMAKE_SOURCE_DIR}/shell.html"
+add_custom_command(TARGET index POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+    ${CMAKE_SOURCE_DIR}/assets
+    ${CMAKE_SOURCE_DIR}/docs/assets
 )
 
-# Set Emscripten output settings (can be changed if necessary)
+set(ASSET_DIR "${CMAKE_SOURCE_DIR}/assets")
 set_target_properties(index PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/docs
     SUFFIX ".html"
+    LINK_FLAGS "--shell-file ${CMAKE_SOURCE_DIR}/shell.html --preload-file ${ASSET_DIR}@/assets"
 )
+
